@@ -1,0 +1,120 @@
+.appoint {
+    &-container {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        padding-bottom: 70px;
+        width: 50%;
+        height: 500px;
+        max-height: 500px;
+        background-color: #ffffffdf;
+        border-radius: 15px;
+        z-index: 999;
+    }
+
+    & section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 0;
+        height: 50px;
+
+        & h3 {
+            width: 80%;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        & button {
+            margin-right: 2rem;
+            border: 0px solid black;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+
+    &-body {
+        display: flex;
+        justify-content: flex-start;
+        height: 350px;
+
+        &-inpts {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            & input {
+                display: block;
+                width: 70%;
+                height: 40px;
+                padding-left: 10px;
+                border: 1px solid lightgray;
+                font-size: 1rem;
+            }
+
+            & button {
+                background-color: white;
+                width: 100px;
+                height: 40px;
+                font-size: 16px;
+                border: 1px solid blue;
+                color: blue;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: blue;
+                    color: white;
+                }
+            }
+        }
+
+        &-info {
+            width: 50%;
+            background-color: blue;
+            color: white;
+            border-bottom-left-radius: 30px;
+            display: grid;
+            place-items: center;
+            padding: 0 2rem;
+
+            & h3 {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            & p {
+                text-align: center;
+            }
+        }
+    }
+
+    &-footer {
+        height: 100px;
+        display: grid;
+        place-items: center;
+
+        & button {
+            margin-left: 1rem;
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: 1px solid blue;
+            color: blue;
+
+            &:hover {
+                background-color: blue;
+                color: white;
+            }
+        }
+    }
+}
